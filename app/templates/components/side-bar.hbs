@@ -1,0 +1,9 @@
+<span {{action 'openSideBar'}}>{{inline-svg "hamburger" class="svg-icon pull-left"}}</span>
+{{!#if sideBarOpen}}
+  <div class="sidebar {{unless sideBarOpen 'close'}}">
+    <div class="clearfix">
+      <h2 class="app-title pull-left"{{action 'closeSideBar'}}>Ryuu</h2>
+      {{!-- <span {{action 'closeSideBar'}}>{{inline-svg "close" class="svg-icon pull-right"}}</span> --}}
+    </div>
+  </div>
+{{!/if}}

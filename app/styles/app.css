@@ -1,0 +1,38 @@
+.top-bar {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  color: #5B4182;
+}
+
+.app-title {
+  margin: 0px auto;
+}
+
+.svg-icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.top-bar .svg-icon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+  transition: transform 0.4s ease;
+  transform: translateX(0px);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sidebar.close {
+  transform: translateX(-250px);
+}
