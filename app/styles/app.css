@@ -29,10 +29,40 @@
   background-color: #fff;
   transition: transform 0.4s ease;
   transform: translateX(0px);
-  padding: 20px;
   cursor: pointer;
 }
 
 .sidebar.close {
   transform: translateX(-250px);
+}
+
+.side-bar-options {
+  list-style: none;
+  padding: 0px;
+}
+
+.side-bar-options > li {
+  padding: 15px 20px;
+  border: 1px solid #eee;
+}
+
+.side-bar-options > li+li {
+  border-top: 0px;
+}
+
+.side-bar-options > li.active {
+  background-color: #eee;
+}
+
+.player {
+  background-color: #333;
+  height: 700px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .player {
+    padding: 50px;
+    height: 300px;
+  }
 }

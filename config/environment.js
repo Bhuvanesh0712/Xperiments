@@ -43,5 +43,13 @@ module.exports = function(environment) {
 
   }
 
+  // used to disable ember-cli-mirage in development
+  // remember to restart build after commenting or uncommenting this
+  // if (environment === 'development') {
+  //   ENV['ember-cli-mirage'] = {
+  //     enabled: false
+  //   }
+  // }
+
   return ENV;
 };

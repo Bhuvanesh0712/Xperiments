@@ -1,17 +1,15 @@
 <div class="top-bar clearfix">
-  {{side-bar}}
+  {{#side-bar}}
+    <ul class="side-bar-options">
+      {{#link-to "index" tagName="li"}}
+        {{#link-to "index"}}Home{{/link-to}}
+      {{/link-to}}
+      {{#link-to "music" tagName="li"}}
+        {{#link-to "music"}}Music{{/link-to}}
+      {{/link-to}}
+    </ul>
+  {{/side-bar}}
   <h2 class="app-title pull-left">Ryuu</h2>
 </div>
 
 {{outlet}}
-
-{{!-- <div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <label class="text-danger">Enter your name:</label>
-    </div>
-    <div class="col-md-6">
-      {{input type="text" class="form-control" value=appName}}
-    </div>
-  </div>
-</div> --}}
