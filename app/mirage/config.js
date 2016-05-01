@@ -17,7 +17,7 @@ export default function() {
   this.get('/example', {
     data: [{
       title: 'Erased OP',
-      url: 'https://www.youtube.com/watch?v=Y9G20wV0KHE'
+      url: 'https://www.youtube.com/embed/ffh0dBSBdTQ'
     }, {
       title: 'Avalukku enna',
       url: 'https://www.youtube.com/embed/ww661Eb3iBY'

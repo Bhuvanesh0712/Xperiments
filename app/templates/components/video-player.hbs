@@ -1,0 +1,9 @@
+<div style="background-color: #111;">
+  {{#if isLoading}}
+    <div style="text-align: center; padding-top: 10%; color: #fff;">
+      Please wait while the video is loading
+    </div>
+  {{/if}}
+  <iframe class="player" src={{video.url}} frameborder="0">
+  </iframe>
+</div>
